@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		257FCE0B2A4E13CE0031F899 /* MyFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 258968A92A4E131200FF8FAF /* MyFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2569481C2AE6C7D100FDECF3 /* MyFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 256948192AE6C7A800FDECF3 /* MyFramework.xcframework */; };
 		258968962A4E12F200FF8FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258968952A4E12F200FF8FAF /* AppDelegate.swift */; };
 		258968982A4E12F200FF8FAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258968972A4E12F200FF8FAF /* SceneDelegate.swift */; };
 		2589689A2A4E12F200FF8FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258968992A4E12F200FF8FAF /* ViewController.swift */; };
 		2589689D2A4E12F200FF8FAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2589689B2A4E12F200FF8FAF /* Main.storyboard */; };
 		2589689F2A4E12F500FF8FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2589689E2A4E12F500FF8FAF /* Assets.xcassets */; };
 		258968A22A4E12F500FF8FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 258968A02A4E12F500FF8FAF /* LaunchScreen.storyboard */; };
-		258968AA2A4E131300FF8FAF /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258968A92A4E131200FF8FAF /* MyFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,13 +23,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				257FCE0B2A4E13CE0031F899 /* MyFramework.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		256948192AE6C7A800FDECF3 /* MyFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MyFramework.xcframework; sourceTree = "<group>"; };
 		258968922A4E12F200FF8FAF /* MyFrameworkTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFrameworkTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		258968952A4E12F200FF8FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		258968972A4E12F200FF8FAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +38,6 @@
 		2589689E2A4E12F500FF8FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		258968A12A4E12F500FF8FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		258968A32A4E12F500FF8FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		258968A92A4E131200FF8FAF /* MyFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,18 +45,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				258968AA2A4E131300FF8FAF /* MyFramework.framework in Frameworks */,
+				2569481C2AE6C7D100FDECF3 /* MyFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2569481B2AE6C7D100FDECF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		258968892A4E12F200FF8FAF = {
 			isa = PBXGroup;
 			children = (
 				258968942A4E12F200FF8FAF /* MyFrameworkTest */,
 				258968932A4E12F200FF8FAF /* Products */,
+				2569481B2AE6C7D100FDECF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,7 +79,7 @@
 		258968942A4E12F200FF8FAF /* MyFrameworkTest */ = {
 			isa = PBXGroup;
 			children = (
-				258968A92A4E131200FF8FAF /* MyFramework.framework */,
+				256948192AE6C7A800FDECF3 /* MyFramework.xcframework */,
 				258968952A4E12F200FF8FAF /* AppDelegate.swift */,
 				258968972A4E12F200FF8FAF /* SceneDelegate.swift */,
 				258968992A4E12F200FF8FAF /* ViewController.swift */,
@@ -306,7 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U96363L4E2;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyFrameworkTest",
@@ -338,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = U96363L4E2;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyFrameworkTest",
